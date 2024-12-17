@@ -5,6 +5,7 @@
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafb);
 }
+
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   font-size: 16px;
@@ -81,6 +82,7 @@ button {
 button:hover {
   border-color: #396cd8;
 }
+
 button:active {
   border-color: #396cd8;
   background-color: #e8e8e8;
@@ -93,6 +95,26 @@ button {
 
 #greet-input {
   margin-right: 5px;
+}
+
+.app-container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  margin-left: 18vw; /* Match navbar width */
+  padding: 2rem;
+  background-color: #f8fafc;
+  min-height: 100vh;
+  overflow-y: auto;
+}
+
+.page-container {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 @media (prefers-color-scheme: dark) {
